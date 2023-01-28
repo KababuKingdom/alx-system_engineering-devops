@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Returns its own pid
+# Displays its own process ID.
 
-echo '$$'
+echo $$
+
