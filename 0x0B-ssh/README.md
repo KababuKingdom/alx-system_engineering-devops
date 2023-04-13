@@ -1,3 +1,3 @@
 # 0x0B. SSH
 
-getting started with ssh
+getting started with ssh.
