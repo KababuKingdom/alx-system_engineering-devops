@@ -5,7 +5,7 @@ package { 'nginx':
 
 file { '/var/www/html/index.html':
   require => Package['nginx'],
-  content => 'Holberton School',
+  content => 'Hello World!',
 }
 
 file_line { 'add-rewrite':
@@ -13,7 +13,7 @@ file_line { 'add-rewrite':
   require => Package['nginx'],
   path    => '/etc/nginx/sites-available/default',
   after   => 'root /var/www/html;',
-  line    => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH@-TGUlwu4 permanent;',
+  line    => 'rewrite ^/redirect_me https://youtu.be/cae6bVggEY4 permanent;',
   notify  => Service['nginx'],
 }
 
