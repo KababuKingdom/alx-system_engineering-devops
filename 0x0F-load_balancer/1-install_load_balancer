@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # install and setup haproxy on a new Ubuntu machine
+=======
+# Installs HAProxy version with the following configurations:
+#+    Enables management via the init script.
+#+    Distributes requests using a round-robin algorithm.
+>>>>>>> d6cceba29c002e271d61ea5f2436c44b5025fe4d
 
 sudo apt-get update
 sudo apt-get install -y haproxy
