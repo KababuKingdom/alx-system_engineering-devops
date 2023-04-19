@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
 # install and setup haproxy on a new Ubuntu machine 
 
+=======
+# Script that configures HAproxy in a load balancer 
+>>>>>>> 34817b05cfe1b80bd46c0fc8ab850021e89771bc
 apt-get -y install software-properties-common
 apt-get -y update
 apt-get -y install haproxy
@@ -22,3 +26,4 @@ echo "
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy restart
+
