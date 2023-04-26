@@ -1,15 +1,30 @@
 
-defaults
-  mode http
-  timeout client 15s
-  timeout connect 10s
-  timeout server 15s
-  timeout http-request 10s
-frontend kababukingdom-tech-frontend
-    bind *:80
-    default_backend kababukingdom-tech-backend
-backend kababukingdom-tech-backend
-    balance roundrobin
-    server 134379-web-01 100.26.235.206:80 check
-    server 134379-web-02 34.234.204.174:80 check
+frontend  kababukingdom-frontend
+        bind *:80
+        mode http
+        default_backend kababukingdom-backend
+backend kababukingdom-backend
+        balance roundrobin
+        server 134379-web-01 52.207.77.186:80 check
+        server 134379-web-02 54.234.70.85:80 check
+
+
+frontend  kababukingdom-frontend
+        bind *:80
+        mode http
+        default_backend kababukingdom-backend
+backend kababukingdom-backend
+        balance roundrobin
+        server 134379-web-01 52.207.77.186:80 check
+        server 134379-web-02 54.234.70.85:80 check
+
+
+frontend  kababukingdom-frontend
+        bind *:80
+        mode http
+        default_backend kababukingdom-backend
+backend kababukingdom-backend
+        balance roundrobin
+        server 134379-web-01 52.207.77.186:80 check
+        server 134379-web-02 54.234.70.85:80 check
 
